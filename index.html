@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>TECHNOVA 2K26 — National Level Inter College Symposium | CSI College of Engineering, Ketti</title>
+<meta name="description" content="TECHNOVA 2K26 — National Level Inter College Symposium presented by the ISTE Student Chapter, CSI College of Engineering, Ketti, Ooty. 24th & 25th September 2026." />
+<meta name="theme-color" content="#030508" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.png" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="locked">
+
+<!-- ===================== LOADER ===================== -->
+<div id="loader" role="status" aria-live="polite" aria-label="Loading Technova 2K26">
+  <div class="loader-inner">
+    <div class="wordmark" id="loaderWord" style="font-size:clamp(2.4rem,10vw,6rem)">
+      <span class="wm wm-tech"><span class="base">TECHNOVA</span><span class="lit" aria-hidden="true">TECHNOVA</span></span>
+      <span class="wm wm-26"><span class="base">2K26</span><span class="lit" aria-hidden="true">2K26</span></span>
+      <span class="laser blue" aria-hidden="true"></span>
+      <span class="laser red" aria-hidden="true"></span>
+    </div>
+    <div class="loader-bar"><i id="lbFill"></i></div>
+    <div class="loader-meta"><span>Initialising the arena</span><span id="lbPct">0%</span></div>
+  </div>
+</div>
+<div id="flash" aria-hidden="true"></div>
+
+<!-- the uploaded artwork, fixed behind the whole site -->
+<div id="bgfix" aria-hidden="true"><img src="assets/hero-bg-soft.jpg" alt="" /></div>
+
+<!-- ===================== TICKER ===================== -->
+<div id="ticker" aria-label="Live Technova updates">
+  <div class="tick-badge"><span class="dot"></span>Live · Technova updates</div>
+  <div class="tick-view"><div class="tick-track" id="tickTrack"></div></div>
+</div>
+
+<!-- ===================== NAV ===================== -->
+<header id="nav">
+  <div class="nav-in">
+    <a class="brand" href="https://csice.edu.in" target="_blank" rel="noopener noreferrer"
+       aria-label="CSI College of Engineering, Ketti — opens the college website in a new tab">
+      <img id="srcCsi" src="assets/logos/csi-logo.png" alt="CSI College of Engineering, Ketti logo" width="120" height="124" />
+      <span class="brand-txt"><b>CSI COLLEGE OF ENGINEERING</b><span>Ketti · Ooty</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#home" data-sec="home">Home</a>
+      <a href="#about" data-sec="about">About</a>
+      <a href="#events" data-sec="events">Events</a>
+      <a href="#technical" data-sec="technical">Technical</a>
+      <a href="#nontechnical" data-sec="nontechnical">Non-Technical</a>
+      <a href="#college" data-sec="college">Campus</a>
+      <a href="#poster" data-sec="poster">Poster</a>
+      <a href="#contact" data-sec="contact">Contact</a>
+    </nav>
+    <button class="btn red sm nav-cta" data-register>Register now</button>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===================== MOBILE MENU ===================== -->
+<div id="menu" aria-hidden="true">
+  <nav aria-label="Mobile">
+    <a class="m-link" href="#home"><i>01</i>Home</a>
+    <a class="m-link" href="#about"><i>02</i>About</a>
+    <a class="m-link" href="#events"><i>03</i>Events</a>
+    <a class="m-link" href="#technical"><i>04</i>Technical</a>
+    <a class="m-link" href="#nontechnical"><i>05</i>Non-Technical</a>
+    <a class="m-link" href="#college"><i>06</i>Campus</a>
+    <a class="m-link" href="#poster"><i>07</i>Poster</a>
+    <a class="m-link" href="#contact"><i>08</i>Contact</a>
+  </nav>
+  <div class="m-foot">
+    <button class="btn red" data-register>Register now</button>
+    <a class="btn ghost" href="https://csice.edu.in" target="_blank" rel="noopener noreferrer">csice.edu.in</a>
+  </div>
+</div>
+
+<!-- ===================== SITE ===================== -->
+<main id="site">
+
+  <!-- HERO -->
+  <section id="home" aria-label="Technova 2K26">
+    <div class="hero-bg"><img src="assets/hero-bg.jpg" alt="" aria-hidden="true" fetchpriority="high" /></div>
+    <span class="hero-veil" aria-hidden="true"></span>
+    <div class="hero-in">
+      <div class="hero-org">
+        <div class="marks">
+          <a href="https://csice.edu.in" target="_blank" rel="noopener noreferrer" aria-label="CSI College of Engineering website">
+            <img data-img="csi" alt="CSI College of Engineering, Ketti" />
+          </a>
+          <span class="sep"></span>
+          <a class="mark-plate iste-link" href="https://www.isteonline.org/" target="_blank" rel="noopener noreferrer"
+             aria-label="Indian Society for Technical Education — opens isteonline.org in a new tab">
+            <img id="srcIste" src="assets/logos/iste-logo.png" alt="Indian Society for Technical Education" />
+          </a>
+        </div>
+        <p>CSI College of Engineering · Ketti</p>
+        <p class="sub">Indian Society for Technical Education — ISTE Student Chapter</p>
+      </div>
+
+      <div class="presents"><i></i><span>Presents</span><i></i></div>
+
+      <p class="national">National Level</p>
+      <h2 class="symposium">Inter College Symposium</h2>
+
+      <h1 class="wordmark hero-wordmark" id="heroWord" aria-label="Technova 2K26">
+        <span class="wm wm-tech"><span class="base">TECHNOVA</span><span class="lit" aria-hidden="true">TECHNOVA</span></span>
+        <span class="wm wm-26"><span class="base">2K26</span><span class="lit" aria-hidden="true">2K26</span></span>
+        <span class="laser blue" aria-hidden="true"></span>
+        <span class="laser red" aria-hidden="true"></span>
+      </h1>
+
+      <p class="hero-date">
+        <span><b>24<sup>th</sup> &amp; 25<sup>th</sup> September 2026</b></span>
+        <span class="venue">Thursday &amp; Friday · Ketti, The Nilgiris — 643215</span>
+      </p>
+      <p class="tagline"><span class="b">Igniting</span> Innovation, <span class="r">Inspire</span> Excellence</p>
+
+      <div class="hero-cta">
+        <button class="btn" data-goto="about">Explore <span class="ar" aria-hidden="true">&#8594;</span></button>
+        <button class="btn red" data-register>Register now</button>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"><i></i>Scroll</div>
+  </section>
+
+  <div id="rest">
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-copy rv">
+        <p class="eyebrow">About</p>
+        <h2 class="h-sec" style="margin:.8rem 0 1.4rem">Technova <span class="thin">2K26</span></h2>
+        <p>TECHNOVA 2K26 is the national level inter college symposium of the ISTE Student Chapter at CSI College of Engineering, Ketti. For two days in the Nilgiris, students from across the country meet to <strong>design, build, argue and perform</strong>.</p>
+        <p>Eight events across two tracks. One is engineering under pressure — drafting, circuits, pitching, problem solving. The other belongs to <strong>voice, memory and imagination</strong>. Both reward the same thing: doing the work well, in front of people.</p>
+        <div class="facts">
+          <div class="fact"><b>8</b><span>Events</span></div>
+          <div class="fact"><b>2</b><span>Days</span></div>
+          <div class="fact"><b>2</b><span>Tracks</span></div>
+          <div class="fact"><b>National</b><span>Level</span></div>
+        </div>
+      </div>
+      <div class="about-vis rv" aria-hidden="true">
+        <svg class="bats" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <g id="bat">
+              <ellipse cx="0" cy="0" rx="3.2" ry="5.6"/>
+              <path d="M-1.5 -5 L-3.2 -8.6 L0.2 -6.6 Z"/><path d="M1.5 -5 L3.2 -8.6 L-0.2 -6.6 Z"/>
+              <path d="M-2.8 -3.4 C-9.5 -8.6 -18.5 -9.6 -25.5 -6.6 C-20.5 -4.6 -18.6 -0.8 -19.6 3
+                       C-15.6 1 -11.6 2 -9.2 4.8 C-6.8 7.6 -4.8 8.6 -2.8 8.2 Z"/>
+              <path d="M2.8 -3.4 C9.5 -8.6 18.5 -9.6 25.5 -6.6 C20.5 -4.6 18.6 -0.8 19.6 3
+                       C15.6 1 11.6 2 9.2 4.8 C6.8 7.6 4.8 8.6 2.8 8.2 Z"/>
+            </g>
+          </defs>
+          <g class="bat b1"><g class="wing"><use href="#bat"/></g></g>
+          <g class="bat b2"><g class="wing"><use href="#bat"/></g></g>
+          <g class="bat b3"><g class="wing"><use href="#bat"/></g></g>
+          <g class="bat b4"><g class="wing"><use href="#bat"/></g></g>
+          <g class="bat b5"><g class="wing"><use href="#bat"/></g></g>
+        </svg>
+        <span class="core">
+          <a class="core-link" href="https://csice.edu.in" target="_blank" rel="noopener noreferrer"
+             aria-label="CSI College of Engineering — opens csice.edu.in in a new tab">
+            <img src="assets/logos/csi-logo-plain.png" alt="CSI College of Engineering, Ketti" />
+            <span class="visit">csice.edu.in <b aria-hidden="true">&#8599;</b></span>
+          </a>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section id="count" aria-label="Countdown to Technova 2K26">
+    <div class="wrap">
+      <div class="count-head">
+        <div>
+          <p class="eyebrow">Arena opens</p>
+          <h2 class="h-sec" style="margin-top:.6rem">24 September 2026</h2>
+        </div>
+        <p class="count-live" id="countState">Counting down in real time</p>
+      </div>
+      <div class="clock" id="clock">
+        <div class="unit"><b id="cd-d">00</b><span>Days</span></div>
+        <div class="unit"><b id="cd-h">00</b><span>Hours</span></div>
+        <div class="unit"><b id="cd-m">00</b><span>Minutes</span></div>
+        <div class="unit"><b id="cd-s">00</b><span>Seconds</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="rule"></div></div>
+
+  <!-- ARENA -->
+  <section id="events">
+    <div class="wrap">
+      <p class="eyebrow rv">The line-up</p>
+      <h2 class="h-sec rv" style="margin:.8rem 0 1rem">Explore the arena</h2>
+      <p class="lead rv">Two tracks, four events each. Open one to see its events, the campus and everything else.</p>
+      <div class="cats">
+        <a class="cat rv" href="#technical" data-goto="technical">
+          <span class="cat-bg"><img class="banner" data-img="banner:tech" alt="" aria-hidden="true" /></span>
+          <div class="n">Track 01 · Four events</div>
+          <h3 class="sr-only">Technical Events</h3>
+          <p>Drafting boards, circuit faults, campaign pitches and problems that need an answer by the end of the hour.</p>
+          <span class="go">Enter track <i></i></span>
+        </a>
+        <a class="cat red rv" href="#nontechnical" data-goto="nontechnical">
+          <span class="cat-bg"><img class="banner" data-img="banner:non" alt="" aria-hidden="true" /></span>
+          <div class="n">Track 02 · Four events</div>
+          <h3 class="sr-only">Non-Technical Events</h3>
+          <p>A microphone, a pile of bricks, a camera and a story — the stage side of the symposium.</p>
+          <span class="go">Enter track <i></i></span>
+        </a>
+      </div>
+      <p class="cats-hint rv" id="catsHint">Choose a track to unlock its events</p>
+    </div>
+  </section>
+
+  <!-- TECHNICAL -->
+  <section id="technical" class="track">
+    <div class="wrap">
+      <h2 class="sr-only">Technical Events</h2>
+      <figure class="track-banner rv">
+        <img id="srcBannerTech" src="assets/banners/technical.jpg" alt="Technical Events — ideas, innovation, impact" loading="lazy" />
+        <i></i><i></i>
+      </figure>
+      <div class="track-head">
+        <div><p class="eyebrow rv">Track 01 · Four events</p></div>
+        <p class="lead rv" style="max-width:38ch">Four events for the people who like the problem more than the prize.</p>
+      </div>
+      <div class="grid-ev" id="gridTech"></div>
+    </div>
+  </section>
+
+  <!-- NON-TECHNICAL -->
+  <section id="nontechnical" class="track">
+    <div class="wrap">
+      <h2 class="sr-only">Non-Technical Events</h2>
+      <figure class="track-banner rv">
+        <img id="srcBannerNon" src="assets/banners/nontechnical.jpg" alt="Non-Technical Events — explore, express, experience" loading="lazy" />
+        <i></i><i></i>
+      </figure>
+      <div class="track-head">
+        <div><p class="eyebrow red rv">Track 02 · Four events</p></div>
+        <p class="lead rv" style="max-width:38ch">Four events where nerve counts as much as preparation.</p>
+      </div>
+      <div class="grid-ev" id="gridNon"></div>
+    </div>
+  </section>
+
+  <!-- COLLEGE -->
+  <section id="college">
+    <div class="wrap">
+      <p class="eyebrow rv">The host</p>
+      <h2 class="h-sec rv" style="margin:.8rem 0 1.2rem">A campus <span class="thin">in the clouds</span></h2>
+      <p class="lead rv">CSI College of Engineering stands at Ketti, on the road that climbs from Coonoor to Ooty. Founded by the CSI Coimbatore Diocesan Council, teaching since 1998, and now autonomous by UGC conferment — nine departments, one hill campus, and the ground TECHNOVA 2K26 is built on.</p>
+
+      <div class="facts rv" style="max-width:640px">
+        <div class="fact"><b>1998</b><span>Teaching since</span></div>
+        <div class="fact"><b>9</b><span>Departments</span></div>
+        <div class="fact"><b>Autonomous</b><span>UGC conferred</span></div>
+        <div class="fact"><b>4.2</b><span>Google rating</span></div>
+      </div>
+
+      <div class="campus-strip rv" id="campusStrip"></div>
+
+      <div class="college-grid">
+        <div class="rv">
+          <div class="rating">
+            <b>4.2</b>
+            <span class="stars" aria-hidden="true">★★★★☆</span>
+            <span>290 Google reviews</span>
+          </div>
+          <ul class="detail-list" style="margin-top:0">
+            <li><span class="k">Institution</span><span class="v">CSI College of Engineering (Autonomous)</span></li>
+            <li><span class="k">Address</span><span class="v">Ketti (Ooty), The Nilgiris, Tamil Nadu — 643 215</span></li>
+            <li><span class="k">Coordinates</span><span class="v">11.374756° N, 76.726257° E</span></li>
+            <li><span class="k">Hours</span><span class="v">Opens 9 am</span></li>
+            <li><span class="k">Phone</span><span class="v"><a href="tel:+919345099377" style="color:var(--blue)">+91 93450 99377</a></span></li>
+            <li><span class="k">Landline</span><span class="v"><a href="tel:+914232517474" style="color:var(--blue)">0423 — 2517474</a></span></li>
+            <li><span class="k">Email</span><span class="v"><a href="mailto:principal@csice.edu.in" style="color:var(--blue)">principal@csice.edu.in</a></span></li>
+            <li><span class="k">Website</span><span class="v"><a href="https://csice.edu.in" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">csice.edu.in</a></span></li>
+          </ul>
+          <div class="poster-actions">
+            <a class="btn" id="dirBtn" data-map="dir" href="#college" target="_blank" rel="noopener noreferrer">Get directions <span class="ar" aria-hidden="true">&#8599;</span></a>
+            <a class="btn ghost" data-map="place" href="#college" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+            <a class="btn ghost" href="tel:+919345099377">Call the college</a>
+          </div>
+        </div>
+
+        <div class="rv">
+          <a class="map-card" id="mapCard" href="#college" target="_blank" rel="noopener noreferrer"
+             aria-label="Open CSI College of Engineering, Ketti in Google Maps">
+            <span class="map-grid" aria-hidden="true"></span>
+            <img class="tiles" id="mapTiles" alt="" aria-hidden="true" />
+            <span class="map-pin" aria-hidden="true">
+              <em></em>
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+              </svg>
+            </span>
+            <span class="map-open">Open in Google Maps &#8599;</span>
+            <span class="map-coords">11.374756 N · 76.726257 E</span>
+            <span class="map-foot">
+              <b>CSI College of Engineering, Ketti</b>
+              <span>Ketti (Ooty), The Nilgiris — 643 215</span>
+            </span>
+          </a>
+          <p class="map-note"><span>Tap the map to open it</span><span>Ketti · The Nilgiris</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="rule"></div></div>
+
+  <!-- POSTER -->
+  <section id="poster">
+    <div class="wrap">
+      <div class="poster-grid">
+        <div class="poster-frame rv" id="posterFrame" role="button" tabindex="0"
+             aria-label="Open the official Technova 2K26 poster full screen">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <img id="srcPoster" src="assets/poster.jpg" alt="Official TECHNOVA 2K26 poster — CSI College of Engineering, Ketti, 24th and 25th September 2026" loading="lazy" />
+        </div>
+        <div class="rv">
+          <p class="eyebrow">Official</p>
+          <h2 class="h-sec" style="margin:.8rem 0 1.2rem">Event poster</h2>
+          <p class="lead">The full official poster, exactly as released by the ISTE Student Chapter. Open it full screen to read every detail, or zoom in on your phone.</p>
+          <ul class="detail-list">
+            <li><span class="k">Symposium</span><span class="v">TECHNOVA 2K26</span></li>
+            <li><span class="k">Dates</span><span class="v">24<sup>th</sup> &amp; 25<sup>th</sup> September 2026 · Thu &amp; Fri</span></li>
+            <li><span class="k">Host</span><span class="v">CSI College of Engineering (Autonomous)</span></li>
+            <li><span class="k">Location</span><span class="v">Ketti, Ooty, The Nilgiris — 643215</span></li>
+            <li><span class="k">Presented by</span><span class="v">ISTE Student Chapter</span></li>
+          </ul>
+          <div class="poster-actions">
+            <button class="btn" id="viewPoster">View poster <span class="ar" aria-hidden="true">&#8594;</span></button>
+            <button class="btn ghost" id="fsPoster">Full screen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGISTER -->
+  <section id="register">
+    <div class="wrap reg-grid">
+      <div class="rv">
+        <p class="eyebrow red">Registration</p>
+        <h2 class="h-sec" style="margin:.8rem 0 1.2rem">Scan to register</h2>
+        <p class="lead">Point your camera at the official QR code from the poster, or tap it — both open the same registration form. Teams and individual entries go through it.</p>
+        <ul class="detail-list">
+          <li><span class="k">Entry</span><span class="v">Open to all colleges — national level</span></li>
+          <li><span class="k">Reporting</span><span class="v">CSI College of Engineering, Ketti</span></li>
+          <li><span class="k">Queries</span><span class="v"><a href="#contact" style="color:var(--blue)">Contact the co-ordinators</a></span></li>
+        </ul>
+        <div class="poster-actions">
+          <button class="btn red" data-register>Register now</button>
+          <button class="btn ghost" data-goto="poster">See the poster</button>
+        </div>
+      </div>
+      <div class="rv">
+        <a class="qr-wrap" id="qrLink" target="_blank" rel="noopener noreferrer"
+           aria-label="Open the TECHNOVA 2K26 registration form">
+          <span class="qr-frame"><i></i><i></i><i></i><i></i></span>
+          <span class="qr-scan" aria-hidden="true"></span>
+          <img src="assets/qr.png" alt="Official TECHNOVA 2K26 registration QR code" loading="lazy" />
+        </a>
+        <p class="qr-cap">Scan it, or tap to open the form</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <p class="eyebrow rv">For contact</p>
+      <h2 class="h-sec rv" style="margin:.8rem 0 1rem">Talk to the team</h2>
+      <p class="lead rv">Tap any number to call.</p>
+      <div class="contact-grid" id="contactGrid"></div>
+
+      <div style="margin-top:clamp(3rem,7vw,5rem)">
+        <p class="eyebrow rv">Under the guidance of</p>
+        <h2 class="h-sec rv" style="margin-top:.8rem">Leadership</h2>
+        <div class="lead-grid rv" id="leadGrid"></div>
+      </div>
+    </div>
+  </section>
+  </div>
+</main>
+
+<!-- ===================== EVENT PAGE ===================== -->
+<div id="page" role="region" aria-label="Event details"></div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer id="siteFoot">
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a href="https://csice.edu.in" target="_blank" rel="noopener noreferrer" aria-label="CSI College of Engineering website">
+          <img data-img="csi" alt="CSI College of Engineering, Ketti" />
+        </a>
+        <div>
+          <b>CSI College of Engineering</b>
+          <p>Autonomous · Ketti, Ooty<br />The Nilgiris — 643215<br />
+            <a href="https://csice.edu.in" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">csice.edu.in</a>
+          </p>
+        </div>
+      </div>
+      <div>
+        <p class="f-title">Quick links</p>
+        <div class="f-links">
+          <a href="#home">Home</a><a href="#about">About</a>
+          <a href="#events">Events</a><a href="#technical">Technical</a>
+          <a href="#nontechnical">Non-Technical</a><a href="#college">Campus</a>
+          <a href="#poster">Poster</a>
+          <a href="#contact">Contact</a><a href="#register">Register</a>
+        </div>
+      </div>
+      <div>
+        <p class="f-title">Presented by</p>
+        <div class="f-iste">
+          <a class="mark-plate iste-link" href="https://www.isteonline.org/" target="_blank" rel="noopener noreferrer"
+             aria-label="Indian Society for Technical Education — opens isteonline.org in a new tab">
+            <img data-img="iste" alt="Indian Society for Technical Education" />
+          </a>
+          <p>Indian Society for Technical Education<br /><span style="color:#c9d1de">ISTE Student Chapter</span><br />
+            <a href="https://www.isteonline.org/" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">isteonline.org</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wordmark f-word" aria-label="Technova 2K26">
+      <span class="wm wm-tech"><span class="base">TECHNOVA</span><span class="lit" aria-hidden="true">TECHNOVA</span></span>
+      <span class="wm wm-26"><span class="base">2K26</span><span class="lit" aria-hidden="true">2K26</span></span>
+    </div>
+
+    <div class="f-bot">
+      <span>National Level Inter College Symposium · 24<sup>th</sup> &amp; 25<sup>th</sup> September 2026</span>
+      <span>Igniting Innovation, Inspire Excellence</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Official Technova 2K26 poster">
+  <div class="lb-bar">
+    <span class="lb-title">Official poster — Technova 2K26</span>
+    <div class="lb-tools">
+      <button class="icon-btn" id="zoomOut" aria-label="Zoom out">&#8722;</button>
+      <button class="icon-btn" id="zoomIn" aria-label="Zoom in">&#43;</button>
+      <button class="icon-btn" id="lbFull" aria-label="Toggle browser full screen">&#9974;</button>
+      <button class="icon-btn" id="lbClose" aria-label="Close poster">&#10005;</button>
+    </div>
+  </div>
+  <div class="lb-stage" id="lbStage"><img data-img="poster" alt="Official TECHNOVA 2K26 poster" id="lbImg" /></div>
+</div>
+
+<!-- ===================== MODAL ===================== -->
+<div id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-card">
+    <h3 id="modalTitle">Registration opens soon</h3>
+    <p>Registration details will be announced soon. Scan the official QR code on the poster, or reach a co-ordinator directly — they will confirm entry for your college.</p>
+    <div class="mrow">
+      <button class="btn" data-goto="register" data-close-modal>Scan the QR</button>
+      <button class="btn ghost" data-goto="contact" data-close-modal>Contact co-ordinators</button>
+      <button class="btn ghost" data-close-modal>Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
